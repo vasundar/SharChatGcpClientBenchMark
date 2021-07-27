@@ -1,0 +1,7 @@
+
+in Config Object :
+copy HAZELCAST_CLOUD_DISCOVERY_TOKEN value from the downloaded client source and Paste it in client code config object.
+copy "hazelcast.client.cloud.url" value from the downloaded client source and Paste it in client code config object
+give cluster name same as name given in cloud environment.
+configure the map name as you want.
+
