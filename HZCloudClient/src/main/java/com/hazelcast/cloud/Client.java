@@ -19,7 +19,8 @@ import static com.hazelcast.client.properties.ClientProperty.STATISTICS_ENABLED;
 public class Client {
     public static void main(String[] args) {
         int batch = 100000;
-        for (int i = 0; i < 50; i++) {
+        int threadCount = 50;
+        for (int i = 0; i < threadCount; i++) {
             MyThread thread = new MyThread(i * batch);
             thread.setDaemon(true);
             thread.start();
